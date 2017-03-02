@@ -5,8 +5,8 @@ function ageCalculator(dateOfBirth) {
     var curDate=new Date();
     var dob=new Date(dateOfBirth);
     if(dob>curDate) {
-        console.log("Enter Valid Data Of Birth");
-        return;
+
+        return "Enter Valid Date of Birth";
     }
     var numberOfYears=curDate.getFullYear()-dob.getFullYear();
     if(dob.getMonth()>curDate.getMonth())
@@ -14,7 +14,7 @@ function ageCalculator(dateOfBirth) {
     if(dob.getMonth()==curDate.getMonth()&&dob.getDay()>curDate.getDay()) {
         numberOfYears--;
     }
-   return numberOfYears;
+   return " You are "+numberOfYears+" years old";
 
 }
 module.exports.ageCalculator=ageCalculator;

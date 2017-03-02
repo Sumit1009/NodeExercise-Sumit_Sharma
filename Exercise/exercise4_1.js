@@ -3,4 +3,4 @@
  */
 var util=require('./exercise4_2.js');
 //Enter date of birth in MM/DD/YYY Format
-console.log(" You are "+util.ageCalculator('03/03/2017')+" years old")
+console.log(util.ageCalculator('09/10/1995'))
