@@ -1,8 +1,8 @@
 /**
  * Created by sumit on 1/3/17.
  */
-const fs=require("fs");
-path="exercise1.js"
+var fs=require("fs");
+var path="exercise1.js"
 var lines=0;
 var data=fs.readFileSync(path);
 if(data.length==0) {

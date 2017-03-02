@@ -1,8 +1,8 @@
 /**
  * Created by sumit on 1/3/17.
  */
-const fs=require("fs");
-path="exercise1.js"
+var fs=require("fs");
+var path="exercise1.js"
 var lines=0;
 fs.readFile(path,'utf8',function(err,data) {
     if(err) {
